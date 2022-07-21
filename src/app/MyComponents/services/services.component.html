@@ -1,0 +1,48 @@
+<div class="mainclass">
+
+    <br> <br> 
+
+    <div class="header">
+        <h2>Services</h2>
+    </div>
+
+    <br> <br> 
+    <div class="body">
+        <div class="card maincard" style="width: 18rem;">
+            <img class="card-img-top" [src]="offline" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Offline Tutorials</h5>
+                <p class="card-text">One on one piano sessions at our professional grand piano catered to you</p>
+                <a routerLink="/book-now"  class="btn btn-secondary">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card maincard" style="width: 18rem;">
+            <img class="card-img-top" [src]="online" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Online Tutorials</h5>
+                <p class="card-text">Our one on one virtual piano sessions gives you the same experience at the comfort of your home </p>
+                <a routerLink="/book-now"  class="btn btn-secondary">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card maincard" style="width: 18rem;">
+            <img class="card-img-top" [src]="studio" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Cinematic music production</h5>
+                <p class="card-text">We provide background scoring and arrangements for advertisements and cinematic production</p>
+                <a routerLink="/book-now"  class="btn btn-secondary">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card maincard" style="width: 18rem;">
+            <img class="card-img-top" [src]="exam" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Exam Rehersals</h5>
+                <p class="card-text">Special preparation for Grade exams and piano facilities available to rehearse for your grade exam</p>
+                <a routerLink="/book-now" class="btn btn-secondary">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

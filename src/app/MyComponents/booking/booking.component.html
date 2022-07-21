@@ -1,0 +1,174 @@
+<div class="header">
+
+    <br><br>
+
+    <h2>Book now</h2>
+
+    <br><br>
+
+    <h5>BOOKING ENQUIRIES</h5>
+    <h6>remediosgershwin@gmail.com</h6>
+
+    <div class="whatsapp">
+        <img [src]="whatsIcon" alt="">
+        <h6 class="contacts">+91 9158969304 / +49 15223407835</h6>
+    </div>
+
+    <!-- <em>
+        <strong>Please NOTE:</strong>
+        this email is for concert-related inquiries ONLY.
+    </em> -->
+
+    <br>
+    <br>
+
+    <div class="socials">
+        <a href="https://www.youtube.com/c/ChrisDias" target="_self">
+            <span class="fa-stack tiny circle_social" style="
+                background-color: #212529 !important;
+                color: rgb(255, 255, 255) !important;
+              ">
+                <i class="social_icon fa fa-youtube icon"></i>
+            </span>
+        </a>
+
+        <a href="https://www.instagram.com/chrisdiaspiano/" target="_self">
+            <span class="fa-stack tiny circle_social" style="
+                background-color: #212529 !important;
+                color: rgb(255, 255, 255) !important;
+              ">
+                <i class="social_icon fa fa-instagram"></i>
+            </span>
+        </a>
+
+
+        <!-- <img [src]="myimage" class="logo" alt=""> -->
+
+
+        <a href="https://www.facebook.com/chris.dias.7374480" target="_self">
+            <span class="fa-stack tiny circle_social" style="
+                background-color: #212529 !important;
+                color: rgb(255, 255, 255) !important;
+              ">
+                <i class="social_icon fa fa-facebook"></i>
+            </span>
+        </a>
+
+
+        <a href="https://www.linkedin.com/in/chris-dia" target="_self">
+            <span class="fa-stack tiny circle_social" style="
+                background-color: #212529 !important;
+                color: rgb(255, 255, 255) !important;
+              ">
+                <i class="social_icon fa fa-linkedin"></i>
+            </span>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+</div>
+<div class="contact" id="contactpage">
+    <form [formGroup]="userForm" #userMsgForm="ngForm" (ngSubmit)=userMessage(userMsgForm.value)>
+        <div class="form">
+            <div class="formin">
+                <input class="inp form-control-sm" name="first" type="text" placeholder="First Name" ngModel
+                    formControlName="firstname">
+
+                <input class="inp form-control-sm" name="last" type="text" placeholder="Last Name" ngModel
+                    formControlName="lastname">
+            </div>
+            <div class="form2">
+                <input class="inp form-control-sm" name="email" type="text" placeholder="E-mail" ngModel
+                    formControlName="email">
+                <input class="inp form-control-sm" name="subject" type="text" placeholder="Subject" ngModel
+                    formControlName="subject">
+            </div>
+            <div class="form3">
+                <div class="mb-3">
+                    <textarea name="your-message" cols="25" rows="10" class="form-control-sm" aria-invalid="false"
+                        placeholder="Your Message" ngModel formControlName="message">
+                    </textarea>
+                </div>
+            </div>
+            <button type="button" (click)="userMessage(userMsgForm.value)" class="btn btn-secondary">SUBMIT</button>
+        </div>
+    </form>
+
+
+
+    <!-- <div class="incompletealert">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </symbol>
+        </svg>
+
+
+        <div *ngIf="userfincomplete && userfincomplete.invalid && userfincomplete.touched"
+            class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div>
+                First Name is a required field
+            </div>
+        </div>
+        <div *ngIf="userlincomplete && userlincomplete.invalid && userlincomplete.touched"
+            class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div>
+                Last Name is a required field
+            </div>
+        </div>
+        <div *ngIf="usereincomplete && usereincomplete.invalid && usereincomplete.touched"
+            class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div>
+                Email is a required field! Enter valid Email address.
+            </div>
+        </div>
+        <div *ngIf="usersincomplete && usersincomplete.invalid && usersincomplete.touched"
+            class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div>
+                Subject is a required field
+            </div>
+        </div>
+        <div *ngIf="userquery && userquery.invalid && userquery.touched"
+            class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div>
+                Message is a required field
+            </div>
+        </div>
+
+    </div> -->
+
+    <div *ngIf="userForm.invalid && submit==true" class="alert alert-dark alert-dismissible fade show" role="alert">
+        <strong>Sorry {{userArray.firstname}}!</strong> One or more fields have an error. Please check and try again.
+        <button (click)="closeAlert()" type="button" class="btn-close btbt" data-bs-dismiss="alert"
+            aria-label="Close"></button>
+    </div>
+
+    <div *ngIf="submit==true && userForm.valid" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Thanks for getting in touch {{userArray.firstname}}!</strong> Sorry! We could'nt complete your request
+        as we're still woring on it.
+        <button (click)="closeAlert()" type="button" class="btn-close" data-bs-dismiss="alert"
+            aria-label="Close"></button>
+
+
+    </div>
+
+    <br><br><br><br><br><br><br>
+</div>

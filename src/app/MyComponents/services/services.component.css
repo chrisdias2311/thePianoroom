@@ -1,0 +1,55 @@
+.mainclass{
+    background-color: #212529;
+    margin: 3%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.header{
+    color: #d9c885;;
+    font-family: 'MonteCarlo', cursive;
+}
+.header h2{
+    font-size: 40px;
+}
+
+
+
+.body{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.services{
+    width: 20%;
+    height: 800px;
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.maincard{
+    background-color: #000000;
+    color: white;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.card-title{
+    font-family: 'Ibarra Real Nova', serif;
+}
+.cared-text{
+    font-family: 'Ibarra Real Nova', serif;
+}
+@media only screen and (max-width: 372px){
+    .cards{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

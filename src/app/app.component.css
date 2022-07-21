@@ -1,0 +1,174 @@
+.mainweb {
+    background-color: black;
+}
+
+.header {
+    background-color: #212529;
+}
+
+.title {
+    color: #d1a138;
+    font-weight: bold;
+    font-family: 'MonteCarlo', cursive;
+    /* font-size: 55px; */
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+}
+.title h1{
+    font-size: 47px;
+}
+
+h1 {
+    margin-bottom: 0rem;
+}
+
+
+.navbar1 {
+    top: 0;
+    position: sticky;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-list1 {
+    display: flex;
+    justify-content: center;
+    background-color: #212529;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+/* .nav-list1 .routers {
+    padding-top: 27px;
+} */
+
+
+.nav-list1 a {
+    text-decoration: none;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    font-size: 90%;
+    /* font-family: Frutiger,Arial,Helvetica,sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'MonteCarlo', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+.nav-list1 .routers:hover {
+    color: #d1a138;
+    text-decoration: underline;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 25px;
+    background-color: white;
+    height: 2px;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+.black {
+    background-color: black;
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.chris-branding {
+    font-size: 50px;
+}
+
+.navbar-container-outer button {
+    justify-content: end;
+    align-items: center;
+}
+
+.navbar-container1 {
+    text-align: end;
+    justify-content: end;
+    align-items: center;
+}
+
+.header {
+    background-color: #212529;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+
+@media only screen and (max-width: 991px){
+    .navbar-container1{
+        text-align: center;
+        background-color: #212529;
+    }
+}
+
+
+/* @media (max-width: 1150px){
+    .nav-list1{
+        flex-direction: column;
+    }
+    .navbar1{
+        flex-direction: column;
+        transition: all 0.3s ease-out;   
+        height: 447px;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+    .socials{
+        height: 50px;
+    }
+    .navbar1{
+        height: 0px;
+    }
+
+
+    .title{
+        padding-bottom: 15px;
+    }
+} */

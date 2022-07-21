@@ -1,0 +1,54 @@
+.header{
+    text-align: center;
+    color: #d9c885;
+    margin-top: 2px solid white;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    padding-top: 2%;
+    font-family: 'MonteCarlo', cursive;
+}
+
+.header h2{
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+.mainclass{
+    background-color: #212529;
+    color: whitesmoke;
+    margin: 3%;
+    text-align: center;
+    border-radius: 5px;
+    background-image: "./assets/Images/DSC_8040.jpg";
+    display: flex;
+    padding: 20px;
+}
+.right{
+    width: 300%;
+    text-align: center;
+    color: white;
+    align-content: center;
+    padding: 20px;
+}
+img{
+    width: 100%;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.info{
+    font-size: 20px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+@media only screen and (max-width: 991px){
+    .mainclass{
+        flex-direction: column;
+    }
+    .right {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+        color: white;
+    }
+}

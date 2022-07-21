@@ -1,0 +1,72 @@
+<div class="mainweb">
+    <div class="header">
+        <!-- <div class="title">
+            <h1>The Pianoroom</h1>
+        </div> -->
+
+        <!-- <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="navbar1 background h-nav-resp">
+            <ul class="nav-list1 v-class-resp">
+                <a class="routers" id="special" routerLink="">Home</a>
+                <a class="routers" routerLink="about">About</a>
+                <a class="routers" routerLink="services">Services</a>
+                <a class="routers" routerLink="founder">Our Founder</a>
+                <a class="routers" routerLink="book-now">Book now</a>
+            </ul>
+        </nav> -->
+
+
+        <nav class=" navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+            <div class="container-fluid navbar-container-outer">
+
+                <div class="heading">
+                    <a routerLink="">
+                        <div class="title">
+                            <h1>The Pianoroom</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
+                <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+                    &#9776;
+                </button>
+
+                <!-- Step 2: Add the ngbCollapse directive to the element below. -->
+                <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse navbar-container1">
+                    <ul class="navbar-nav nav-list1">
+                        <li class="nav-item active">
+                            <!-- Step 4: Close the menu when a link is clicked. -->
+                            <a class="nav-link" routerLink="" (click)="isMenuCollapsed = true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="about"
+                                (click)="isMenuCollapsed = true">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="services" (click)="isMenuCollapsed = true">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="founder" (click)="isMenuCollapsed = true">Our Founder</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="book-now" (click)="isMenuCollapsed = true">Book now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <router-outlet></router-outlet>
+
+    <br><br><br><br><br>
+
+    <app-footer></app-footer>
+</div>
